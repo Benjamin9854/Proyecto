@@ -1,0 +1,74 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.plot {
+    width: 96px;
+    height: 96px;
+    margin: 8px;
+    background-image: url('images/plot.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plot.not {
+    width: 96px;
+    height: 96px;
+    margin: 8px;
+    background-image: url('images/not_plot.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plot.carrot_1{
+    background-image: url('images/plot_carrot_1.png');
+}
+
+.plot.carrot_2{
+    background-image: url('images/plot_carrot_2.png');
+}
+
+.plot.carrot_3{
+    background-image: url('images/plot_carrot_3.png');
+}
+
+
+.plot.cabbage_1{
+    background-image: url('images/plot_cabbage_1.png');
+}
+
+.plot.cabbage_2{
+    background-image: url('images/plot_cabbage_2.png');
+}
+
+.plot.cabbage_3{
+    background-image: url('images/plot_cabbage_3.png');
+}
+
+
+#farm-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los cuadrados */
+    position: fixed;
+    bottom: 0;
+    left: 100px; /* Ajusta esto si quieres que esté centrado o a la derecha */
+    z-index: 110;
+}
+
+.hidden {
+    display: none;
+}
