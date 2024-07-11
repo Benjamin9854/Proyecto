@@ -2,9 +2,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM completamente cargado y analizado");
 
     const moneyDisplay = document.getElementById('money');
-    const seedsDisplay = document.getElementById('seeds');
+    const carrotseedsDisplay = document.getElementById('carrotSeeds');
+    const cabbageseedsDisplay = document.getElementById('cabbageSeeds');
+    const tomatoseedsDisplay = document.getElementById('tomatoSeeds');
     const cost_plotDisplay = document.getElementById('cost_plot');
-    const buySeedButton = document.getElementById('buySeedAButton');
+    const buyCarrotSeedButton = document.getElementById('buyCarrotSeedButton');
+    const buyCabbageSeedButton = document.getElementById('buyCabbageSeedButton');
+    const buyTomatoSeedButton = document.getElementById('buyTomatoSeedButton');
     const buyPlotButton = document.getElementById('buyPlotButton');
     const plantButtonCarrot = document.getElementById('plantButtonCarrot');
     const plantButtonCabbage = document.getElementById('plantButtonCabbage');
@@ -12,7 +16,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const harvestButton = document.getElementById('harvestButton');
     const mouseButton = document.getElementById('mouseButton');
 
-    let seeds = 10;
+    let carrotSeeds = parseInt(carrotseedsDisplay.textContent);
+    let cabbageSeeds = parseInt(cabbageseedsDisplay.textContent);
+    let tomatoSeeds = parseInt(tomatoseedsDisplay.textContent);
     let plotCount = 3;
 
     // Variable para saber si estamos en modo de plantar
@@ -98,11 +104,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (isPlantingCarrot) {
                 if (!plot.classList.contains('planted') && !plot.classList.contains('not')) {
                     // Si la parcela no está plantada, mostrar mensaje para plantar
-                    if (seeds > 0) {
+                    if (carrotSeeds > 0) {
                         plot.classList.remove('planted');
                         plot.classList.add('carrot_1');
-                        seeds--;
-                        seedsDisplay.textContent = seeds;
+                        carrotSeeds--;
+                        carrotseedsDisplay.textContent = carrotSeeds;
     
                         // Simular crecimiento de la planta después de 5 segundos
                         setTimeout(() => {
@@ -116,18 +122,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         }, 5000); // 5000 milisegundos = 5 segundos
 
                     } else {
-                        alert('No tienes suficientes semillas para plantar.');
+                        alert('!Sin semillas de zanahoria¡');
                     }
                 }
             }
             else if (isPlantingCabbage) {
                 if (!plot.classList.contains('planted') && !plot.classList.contains('not')) {
                     // Si la parcela no está plantada, mostrar mensaje para plantar
-                    if (seeds > 0) {
+                    if (cabbageSeeds > 0) {
                         plot.classList.remove('planted');
                         plot.classList.add('cabagge_1');
-                        seeds--;
-                        seedsDisplay.textContent = seeds;
+                        cabbageSeeds--;
+                        cabbageseedsDisplay.textContent = cabbageSeeds;
     
                         // Simular crecimiento de la planta después de 5 segundos
                         setTimeout(() => {
@@ -148,11 +154,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             else if (isPlantingTomato) {
                 if (!plot.classList.contains('planted') && !plot.classList.contains('not')) {
                     // Si la parcela no está plantada, mostrar mensaje para plantar
-                    if (seeds > 0) {
+                    if (tomatoSeeds > 0) {
                         plot.classList.remove('planted');
                         plot.classList.add('tomato_1');
-                        seeds--;
-                        seedsDisplay.textContent = seeds;
+                        tomatoSeeds--;
+                        tomatoseedsDisplay.textContent = tomatoSeeds;
     
                         // Simular crecimiento de la planta después de 5 segundos
                         setTimeout(() => {
@@ -203,15 +209,37 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
     //COMPRAR SEMILLAS
-    buySeedButton.addEventListener('click', () => {
+    buyCarrotSeedButton.addEventListener('click', () => {
         let money = parseInt(moneyDisplay.textContent);
         if (money >= 5) {
             money -= 5;
-            seeds++;
+            carrotSeeds++;
             moneyDisplay.textContent = money;
-            seedsDisplay.textContent = seeds;
+            carrotseedsDisplay.textContent = carrotSeeds;
         } else {
-            alert('No tienes suficiente dinero para comprar una semilla.');
+            alert('No tienes suficiente dinero');
+        }
+    });
+    buyCabbageSeedButton.addEventListener('click', () => {
+        let money = parseInt(moneyDisplay.textContent);
+        if (money >= 25) {
+            money -= 25;
+            cabbageSeeds++;
+            moneyDisplay.textContent = money;
+            cabbageseedsDisplay.textContent = cabbageSeeds;
+        } else {
+            alert('No tienes suficiente dinero');
+        }
+    });
+    buyTomatoSeedButton.addEventListener('click', () => {
+        let money = parseInt(moneyDisplay.textContent);
+        if (money >= 100) {
+            money -= 100;
+            tomatoSeeds++;
+            moneyDisplay.textContent = money;
+            tomatoseedsDisplay.textContent = tomatoSeeds;
+        } else {
+            alert('No tienes suficiente dinero');
         }
     });
 
