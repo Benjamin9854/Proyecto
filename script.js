@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const sellCarrotButton = document.getElementById('sellCarrotButton');
     const sellCabbageButton = document.getElementById('sellCabbageButton');
     const sellTomatoButton = document.getElementById('sellTomatoButton');
+    const cambiarButton = document.getElementById('cambiarButton');
 
     let carrotSeeds = parseInt(carrotseedsDisplay.textContent);
     let cabbageSeeds = parseInt(cabbageseedsDisplay.textContent);
@@ -313,6 +314,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+    
+
+    //CAMBIAR DE RANCHO
+    cambiarButton.addEventListener('click', () => {
+        const currentUrl = window.location.href;
+        if (currentUrl.endsWith('/Proyecto/')) {
+            window.location.href = currentUrl + 'corral';
+        } else if (currentUrl.endsWith('/Proyecto/corral')) {
+            window.location.href = currentUrl.replace('/corral', '');
+        }
+    });
 
 
 
@@ -339,13 +351,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    document.getElementById("animalButton").addEventListener("click", function() {
-        window.location.href = "corral.html";
-    });
-
-    document.getElementById("indexButton").addEventListener("click", function() {
-        window.location.href = "index.html";
-    });        
 
     //ESCONDER INVENTARIO
     document.getElementById('inventoryButton').addEventListener('click', function() {

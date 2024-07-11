@@ -21,31 +21,13 @@
 
 
 
-    <!--PARCELAS!-->
-    <!--PARCELAS!-->
-    <div id="farm-container">
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot1"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot2"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot3"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot4"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot5"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot6"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot7"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot8"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot9"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot10"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot11"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot12"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot13"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot14"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot15"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot16"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot17"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot18"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot19"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot20"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot21"></div>
-        <div class="plot not w-24 h-24 m-2 flex justify-center items-center" id="plot22"></div>
+    <!--CORRAL!-->
+    <!--CORRAL!-->
+    <div id="corral-container">
+        <div class="corral not w-84 h-84 m-2 flex justify-center items-center" id="corral1"></div>
+        <div class="corral not w-84 h-84 m-2 flex justify-center items-center" id="corral2"></div>
+        <div class="corral not w-84 h-84 m-2 flex justify-center items-center" id="corral3"></div>
+        <div class="corral not w-84 h-84 m-2 flex justify-center items-center" id="corral4"></div>
     </div>
 
     <!--MENU LATERAL PARA COMPRAR!-->
@@ -98,10 +80,10 @@
             <span class="mb-1">Cancelar</span>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-pointer"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3.039 4.277l3.904 13.563c.185 .837 .92 1.516 1.831 1.642l.17 .016a2.2 2.2 0 0 0 1.982 -1.006l.045 -.078l1.4 -2.072l4.05 4.05a2.067 2.067 0 0 0 2.924 0l1.047 -1.047c.388 -.388 .606 -.913 .606 -1.461l-.008 -.182a2.067 2.067 0 0 0 -.598 -1.28l-4.047 -4.048l2.103 -1.412c.726 -.385 1.18 -1.278 1.053 -2.189a2.2 2.2 0 0 0 -1.701 -1.845l-13.524 -3.89a1 1 0 0 0 -1.236 1.24z" /></svg>
         </button>
-        <button id="buyPlotButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-yellow-600 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-black dark:focus:text-white">
-            <span class="mb-1">Parcela</span>
+        <button id="buyCorralButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-yellow-600 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-black dark:focus:text-white">
+            <span class="mb-1">Corral</span>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moneybag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" /><path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /></svg>
-            <span id="cost_plot" class="mt-1">20</span>
+            <span id="cost_plot" class="mt-1">100</span>
         </button>
         <button  id="inventoryButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 rounded-b-xl hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-purple-700 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-purple-600 dark:focus:ring-black dark:focus:text-white">
             <span class="mb-1">Inventario</span>
@@ -160,6 +142,6 @@
 
     <!--SCRIPT!-->
     <!--SCRIPT!-->
-    <script src="script.js"></script>
+    <script src="scriptCorral.js"></script>
 </body>
 </html>
