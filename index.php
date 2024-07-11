@@ -129,7 +129,7 @@
     <div id="inventory" class="mb-4 hidden">
         <div class="flex flex-row space-x-4">
             <div class="flex flex-col items-center mb-4">
-                <span class="font-bold mb-2">Semillas</span>
+                <span class="font-bold mb-2">Semilla</span>
                 <p>Zanahorias: <span id="carrotSeeds" class="font-bold">0</span></p>
                 <p>Lechuga: <span id="cabbageSeeds" class="font-bold">0</span></p>
                 <p>Tomates: <span id="tomatoSeeds" class="font-bold">0</span></p>
