@@ -168,4 +168,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             newMenu.classList.add('hidden');
         }
     });
+
+    document.getElementById("animalButton").addEventListener("click", function() {
+        window.location.href = "corral.html";
+    });
+
+    document.getElementById("indexButton").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });        
 });

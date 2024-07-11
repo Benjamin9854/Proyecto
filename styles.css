@@ -69,6 +69,50 @@ body {
     z-index: 110;
 }
 
+#corral-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    z-index: 110;
+}
+
+.corral {
+    position: relative;
+    width: 336px;
+    height: 336px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('images/corral.png');
+}
+
+.corral.not {
+    position: relative;
+    width: 336px;
+    height: 336px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('images/corral0.png');
+}
+
+.corral.vaca1 {
+    background-image: url('images/corral1.png');
+}
+
+.corral.vaca2 {
+    background-image: url('images/corral2.png');
+}
+
+.corral.vaca3 {
+    background-image: url('images/corral3.png');
+}
+
+.corral.vaca4 {
+    background-image: url('images/corral4.png');
+}
+
 .hidden {
     display: none;
 }
