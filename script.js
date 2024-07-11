@@ -14,11 +14,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const plantButtonCabbage = document.getElementById('plantButtonCabbage');
     const plantButtonTomato = document.getElementById('plantButtonTomato');
     const harvestButton = document.getElementById('harvestButton');
+    const carrotHarvestDisplay = document.getElementById('carrotHarvest');
+    const cabbageHarvestDisplay = document.getElementById('cabbageHarvest');
+    const tomatoHarvestDisplay = document.getElementById('tomatoHarvest');
     const mouseButton = document.getElementById('mouseButton');
+    const sellCarrotButton = document.getElementById('sellCarrotButton');
+    const sellCabbageButton = document.getElementById('sellCabbageButton');
+    const sellTomatoButton = document.getElementById('sellTomatoButton');
 
     let carrotSeeds = parseInt(carrotseedsDisplay.textContent);
     let cabbageSeeds = parseInt(cabbageseedsDisplay.textContent);
     let tomatoSeeds = parseInt(tomatoseedsDisplay.textContent);
+
+    let carrotHarvest = parseInt(carrotHarvestDisplay.textContent);
+    let cabbageHarvest = parseInt(cabbageHarvestDisplay.textContent);
+    let tomatoHarvest = parseInt(tomatoHarvestDisplay.textContent);
     let plotCount = 3;
 
     // Variable para saber si estamos en modo de plantar
@@ -98,7 +108,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const plots = document.querySelectorAll('.plot');
 
 
-    // PLANTAR SEMILLAS
+    // PLANTAR SEMILLAS Y COSECHAR PLANTAS
     plots.forEach(plot => {
         plot.addEventListener('click', () => {
             if (isPlantingCarrot) {
@@ -182,21 +192,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
             else if (isHarvesting){
                 if (plot.classList.contains('carrot_3')) {
-                    let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
-                    moneyValue += 10; // Le suma 10 monedas
-                    moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+                    carrotHarvest += 1 //Le suma la cosecha
+                    carrotHarvestDisplay.textContent = carrotHarvest; // Actualiza el valor en la página
                     plot.classList.remove('carrot_3');
                 }
                 if (plot.classList.contains('cabbage_3')) {
-                    let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
-                    moneyValue += 50; // Le suma 50 monedas
-                    moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+                    cabbageHarvest += 1 //Le suma la cosecha
+                    cabbageHarvestDisplay.textContent = cabbageHarvest; // Actualiza el valor en la página
                     plot.classList.remove('cabbage_3');
                 }
                 if (plot.classList.contains('tomato_4')) {
-                    let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
-                    moneyValue += 200; // Le suma 200 monedas
-                    moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+                    tomatoHarvest += 1 //Le suma la cosecha
+                    tomatoHarvestDisplay.textContent = tomatoHarvest; // Actualiza el valor en la página
                     plot.classList.remove('tomato_4');
                 }
             }
@@ -273,7 +280,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    //VENDER COSECHA
+    sellCarrotButton.addEventListener('click', () => {
+        if(carrotHarvest > 0){
+            carrotHarvest--;
+            carrotHarvestDisplay.textContent = carrotHarvest;
+            let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
+            moneyValue += 10; // Le suma 10 monedas
+            moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+        }   
+    });
 
+    sellCabbageButton.addEventListener('click', () => {
+        if(cabbageHarvest > 0){
+            cabbageHarvest--;
+            cabbageHarvestDisplay.textContent = cabbageHarvest;
+            let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
+            moneyValue += 40; // Le suma 50 monedas
+            moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+        }   
+    });
+
+    sellTomatoButton.addEventListener('click', () => {
+        if(tomatoHarvest > 0){
+            tomatoHarvest--;
+            tomatoHarvestDisplay.textContent = tomatoHarvest;
+            let moneyValue = parseInt(moneyDisplay.textContent); // Convierte el valor de texto a entero
+            moneyValue += 150; // Le suma 10 monedas
+            moneyDisplay.textContent = moneyValue; // Actualiza el valor en la página
+        }   
+    });
 
 
 

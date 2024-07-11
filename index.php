@@ -139,15 +139,15 @@
                 <div class="flex flex-row space-x-4">
                     <div class="mb-2">
                         <p>Zanahorias: <span id="carrotHarvest" class="font-bold">0</span></p>
-                        <button class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($10)</button>
+                        <button id="sellCarrotButton" class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($10)</button>
                     </div>
                     <div class="mb-2">
                         <p>Lechuga: <span id="cabbageHarvest" class="font-bold">0</span></p>
-                        <button class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($50)</button>
+                        <button id="sellCabbageButton" class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($40)</button>
                     </div>
                     <div class="mb-2">
                         <p>Tomates: <span id="tomatoHarvest" class="font-bold">0</span></p>
-                        <button class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($200)</button>
+                        <button id="sellTomatoButton" class="bg-green-500 text-white px-2 py-1 rounded mt-1">Vender ($150)</button>
                     </div>
                 </div>
                 
