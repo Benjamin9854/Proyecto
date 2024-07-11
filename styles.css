@@ -36,11 +36,9 @@ body {
 .plot.carrot_1{
     background-image: url('images/plot_carrot_1.png');
 }
-
 .plot.carrot_2{
     background-image: url('images/plot_carrot_2.png');
 }
-
 .plot.carrot_3{
     background-image: url('images/plot_carrot_3.png');
 }
@@ -49,15 +47,26 @@ body {
 .plot.cabbage_1{
     background-image: url('images/plot_cabbage_1.png');
 }
-
 .plot.cabbage_2{
     background-image: url('images/plot_cabbage_2.png');
 }
-
 .plot.cabbage_3{
     background-image: url('images/plot_cabbage_3.png');
 }
 
+
+.plot.tomato_1{
+    background-image: url('images/plot_tomato_1.png');
+}
+.plot.tomato_2{
+    background-image: url('images/plot_tomato_2.png');
+}
+.plot.tomato_3{
+    background-image: url('images/plot_tomato_3.png');
+}
+.plot.tomato_4{
+    background-image: url('images/plot_tomato_4.png');
+}
 
 #farm-container {
     display: flex;
@@ -115,4 +124,40 @@ body {
 
 .hidden {
     display: none;
+}
+
+
+#stats {
+    position: fixed;
+    top: 10px;
+    right: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#inventory {
+    position: fixed;
+    top: 100px;
+    right: 512px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: auto;
+}
+
+.title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
