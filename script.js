@@ -339,6 +339,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    document.getElementById("animalButton").addEventListener("click", function() {
+        window.location.href = "corral.html";
+    });
+
+    document.getElementById("indexButton").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });        
 
     //ESCONDER INVENTARIO
     document.getElementById('inventoryButton').addEventListener('click', function() {
