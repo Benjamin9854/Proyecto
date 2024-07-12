@@ -69,11 +69,11 @@
     <!--MENU LATERAL PARA PLANTAR Y COSECHAR!-->
     <div class="flex flex-col fixed top-0 left-0 mt-5 ml-3">
         <button id="plantButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 rounded-t-xl hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-black dark:focus:text-white">
-            <span class="mb-1">Plantar</span>
+            <span class="mb-1">Comprar</span>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trowel"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.42 9.058l-5.362 5.363a1.978 1.978 0 0 1 -3.275 -.773l-2.682 -8.044a1.978 1.978 0 0 1 2.502 -2.502l8.045 2.682a1.978 1.978 0 0 1 .773 3.274z" /><path d="M10 10l6.5 6.5" /><path d="M19.347 16.575l1.08 1.079a1.96 1.96 0 0 1 -2.773 2.772l-1.08 -1.079a1.96 1.96 0 0 1 2.773 -2.772z" /></svg>
         </button>
         <button id="harvestButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-green-700 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-black dark:focus:text-white">
-            <span class="mb-1">Cosechar</span>
+            <span class="mb-1">Vender</span>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hand-stop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5" /><path d="M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5" /><path d="M14 5.5a1.5 1.5 0 0 1 3 0v6.5" /><path d="M17 7.5a1.5 1.5 0 0 1 3 0v8.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" /></svg>
         </button>
         <button id="mouseButton" type="button" class="flex flex-col items-center px-2 py-2 bg-white border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-red-700 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-black dark:focus:text-white">

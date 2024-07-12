@@ -106,6 +106,75 @@ body {
     background-image: url('images/corral0.png');
 }
 
+.corral.pollo1 {
+    background-image: url('images/corralp1.png');
+}
+
+.corral.pollo2 {
+    background-image: url('images/corralp2.png');
+}
+
+.corral.pollo3 {
+    background-image: url('images/corralp3.png');
+}
+
+.corral.pollo4 {
+    background-image: url('images/corralp4.png');
+}
+
+.corral.pollo5 {
+    background-image: url('images/corralp5.png');
+}
+
+.corral.pollo6 {
+    background-image: url('images/corralp6.png');
+}
+
+.corral.pollo7 {
+    background-image: url('images/corralp7.png');
+}
+
+.corral.pollo8 {
+    background-image: url('images/corralp8.png');
+}
+
+.corral.pollo9 {
+    background-image: url('images/corralp9.png');
+}
+
+.corral.pollo10 {
+    background-image: url('images/corralp10.png');
+}
+
+.corral.pollo11 {
+    background-image: url('images/corral11.png');
+}
+
+.corral.pollo12 {
+    background-image: url('images/corral12.png');
+}
+
+.corral.cerdo1 {
+    background-image: url('images/corralc1.png');
+}
+
+.corral.cerdo2 {
+    background-image: url('images/corralc2.png');
+}
+
+.corral.cerdo3 {
+    background-image: url('images/corralc3.png');
+}
+.corral.cerdo4 {
+    background-image: url('images/corralc4.png');
+}
+.corral.cerdo5 {
+    background-image: url('images/corralc5.png');
+}
+.corral.cerdo6 {
+    background-image: url('images/corralc6.png');
+}
+
 .corral.vaca1 {
     background-image: url('images/corral1.png');
 }
